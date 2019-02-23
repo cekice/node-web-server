@@ -44,6 +44,12 @@ app.get('/about', (req, res) => {
         pageTitle: 'About the page',
     })
 })
+ 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects form github',
+    })
+})
 
 app.get('/bad', (req, res) => {
     res.send({
